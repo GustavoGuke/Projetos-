@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Classes auxiliares */
+.container{
+    max-width: 1280px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+.w50 {
+    width: 50%;
+    float: left;
+}
+.center{
+    text-align: center;
+}
+
+.clear{clear: both;}
+
+
+/* Classes do site*/
+header{
+    padding: 8px 0;
+}
+.logo{
+    float: left;
+    color: rgb(26, 24, 24);
+    font-weight: bold;
+}
+nav.menu-desktop a.ativo{
+    color: rgb(4, 54, 13);
+    font-weight: bold;
+}
+nav.menu-desktop{
+    float: right;
+}
+nav.menu-desktop ul{
+    position: relative;
+    top: 8px;
+}
+nav.menu-desktop li{
+    padding: 0 20px;
+    display: inline-block;
+}
+nav.menu-desktop a{
+    color: green;
+    text-decoration: none;
+}
+nav.menu-desktop a:hover{
+    color: rgb(179, 241, 86);
+}
+
+/*sessão main*/
+section.main-bg{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('../img/fantasy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+
+section.main-bg > .container{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    left: 0;
+    right: 0;
+}
+
+section.main-bg h2{
+    text-align: center;
+    color: white;
+    padding-top: 100px ;
+    padding-bottom: 30px;
+    
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+section.main-bg p{
+    color: white;
+    padding-top: 28px;
+   
+    font-size: 20px;
+    text-align: left;
+    
+}
+
+/*seção diferencias*/
+
+section.diferenciais {
+    padding: 80px 0;
+    text-align: left;
+}
+
+.line-text {
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+
+.line-text > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 7px;
+    background: black;
+   
+}
+
+.line-text h2 {
+    padding-top: 8px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
+
+/*icones*/
+
+.icones-dif {
+    margin-top: 35px;
+}
+.box-icone-single{
+    float: left;
+    width: 33.33%;
+    margin-bottom: 10px;
+}
+.box-icone-single h2 {
+    padding-bottom: 5px;
+    font-size: 40px;
+    color: gray;
+    text-align: center;
+}
+.box-icone-single p {
+    text-align: left;
+    padding: 2px 10px;
+    font-size: 18px;
+}
+
+/* seção sobre*/
+
+section.sobre-equipe {
+    padding: 30px 0;
+    background: rgb(225,225,225);
+}
+section.sobre-equipe > .container {
+    display: flex;
+}
+
+.equipe-container {
+    width: 90%;
+}
+.sobre-container {
+    width: 10%;
+}
+/*section inscricao*/
+section.inscricao{
+    height: 100px;
+    padding: 20px 0;
+    background: rgb(53, 51, 51);
+
+}
+
+.inscricao-form input[type=text]{
+    width: calc(100% - 120px);
+    height: 40px;
+    background: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+.inscricao-form input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background: black;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+.inscricao-texto{
+    font-size: 22px;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .w50{width: 100%; margin-bottom: 20px;}
+    
+    .box-icone-single{
+        width: 100%;
+    }
+    .equipe-container{
+        width: 100%;
+    }
+    .sobre-container{
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
