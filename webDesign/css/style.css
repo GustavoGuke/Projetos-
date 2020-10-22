@@ -204,7 +204,38 @@ section.inscricao{
     color: white;
 }
 
+/*section cards*/
+section.cards{
+    padding: 30px 0;
+}
+
+.cards-single{
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+    
+}
+
+.cards-single img {
+    width: 100%;
+}
+
+.cards-single h3{
+    font-weight: normal;
+    font-size: 19px;
+    margin: 5px 0;
+}
+
+.cards-single p{
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
 @media screen and (max-width: 768px){
+    .cards-single{width: 100%;}
+
     .w50{width: 100%; margin-bottom: 20px;}
     
     .box-icone-single{
@@ -219,6 +250,11 @@ section.inscricao{
     }
 }
 
+@media screen and (max-width: 500px){
+    .cards-single{
+        padding: 10px;
+    }
+}
 
 
 
