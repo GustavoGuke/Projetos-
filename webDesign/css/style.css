@@ -12,6 +12,10 @@
     margin:0 auto;
     padding:0 2%;
 }
+.w33{
+    float: left;
+    width: 33.3%;
+}
 
 .w50 {
     width: 50%;
@@ -233,10 +237,45 @@ section.cards{
     border-bottom: 2px solid #ccc;
 }
 
+
+footer.footer-1{
+    background: #ccc;
+    padding: 30px 0;
+}
+
+footer.foorer-1 h3{
+    font-weight: normal;
+    font-size: 43px;
+}
+
+footer.footer-1 p{
+    margin-top: 10px;
+}
+
+footer.footer-1 a{
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+div.group-icons a{
+    text-align: left;
+    font-size: 18px;
+    display: inline-block;
+    margin: 20px 0;
+    margin-right: 10px ;
+}
+
+footer.footer-2{
+    text-align: center;
+    padding: 15px;
+    background: rgb(53, 51, 51);
+    color: white;
+}
 @media screen and (max-width: 768px){
     .cards-single{width: 100%;}
 
-    .w50{width: 100%; margin-bottom: 20px;}
+    .w50, .w33{width: 100%; margin-bottom: 20px;}
     
     .box-icone-single{
         width: 100%;
